@@ -1,0 +1,15 @@
+specVersion: 0.35.0
+name: hello
+runtime: go
+registry: registry.srcmesh.dev/weichih
+image: registry.srcmesh.dev/weichih/hello:latest
+imageDigest: sha256:acc83e54b3074e744bbac13a1a5540065ef33180d4d4aa2ba6b5c1081c21850e
+created: 2023-07-31T14:46:24.368499+08:00
+build:
+  builder: pack
+run:
+  envs:
+  - name: k1
+    value: v1
+deploy:
+  namespace: default
